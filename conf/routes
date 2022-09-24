@@ -1,9 +1,41 @@
-# Routes
-# This file defines all application routes (Higher priority routes first)
-# ~~~~
-
-# An example controller showing a sample home page
 GET     /                           controllers.HomeController.index()
 
-# Map static resources from the /public folder to the /assets URL path
+# [error] identifier expected but 'def' found.
+# GET     /def                        controllers.JavaController.def()
+# GET     /forSome                    controllers.JavaController.forSome()
+# GET     /implicit                   controllers.JavaController.implicit()
+# GET     /lazy                       controllers.JavaController.lazy()
+# GET     /match                      controllers.JavaController.match()
+# GET     /object                     controllers.JavaController.object()
+# GET     /override                   controllers.JavaController.override()
+# GET     /sealed                     controllers.JavaController.sealed()
+# GET     /trait                      controllers.JavaController.trait()
+# GET     /type                       controllers.JavaController.type()
+# GET     /val                        controllers.JavaController.val()
+# GET     /var                        controllers.JavaController.var()
+# GET     /with                       controllers.JavaController.with()
+# GET     /yield                      controllers.JavaController.yield()
+# GET     /def                        controllers.ScalaController.def()
+# GET     /forSome                    controllers.ScalaController.forSome()
+# GET     /implicit                   controllers.ScalaController.implicit()
+# GET     /lazy                       controllers.ScalaController.lazy()
+# GET     /match                      controllers.ScalaController.match()
+# GET     /object                     controllers.ScalaController.object()
+# GET     /override                   controllers.ScalaController.override()
+# GET     /sealed                     controllers.ScalaController.sealed()
+# GET     /trait                      controllers.ScalaController.trait()
+# GET     /type                       controllers.ScalaController.type()
+# GET     /val                        controllers.ScalaController.val()
+# GET     /var                        controllers.ScalaController.var()
+# GET     /with                       controllers.ScalaController.with()
+# GET     /yield                      controllers.ScalaController.yield()
+
+# [error] end of input expected
+# GET     /def                        controllers.JavaController.`def`()
+# GET     /def                        controllers.ScalaController.`def`()
+
+# [warn] Wrap `export` in backticks to use it as an identifier, it will become a keyword in Scala 3.
+GET     /export                     controllers.JavaController.export()
+GET     /export                     controllers.ScalaController.export()
+
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
